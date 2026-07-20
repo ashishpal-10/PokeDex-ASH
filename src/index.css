@@ -28,9 +28,28 @@ button{
     margin-top: 10px;
 }
 
+.logo{
+    margin-left: 12px;
+}
+
+input{
+    padding: 4px 6px;
+}
+
+.remix-icon{
+    margin-left: 6px;
+}
+
  @media (width <= 40rem ) {
     .herobox{
         margin: 20px;
         text-align: center;
     }
+
+    /* .inputbox{
+        display: none;
+    } */
+
+    
+
     }

@@ -34,9 +34,9 @@ const Hero = () => {
               Explore Now
             </button>
 
-            <button className="rounded-full border border-gray-500  px-8 py-4 font-semibold text-black backdrop-blur-xl transition duration-300 hover:bg-blue-500 hover:text-white">
+            {/* <button className="rounded-full border border-gray-500  px-8 py-4 font-semibold text-black backdrop-blur-xl transition duration-300 hover:bg-blue-500 hover:text-white">
               Random Pokémon
-            </button>
+            </button> */}
           </div>
         </div>
 
