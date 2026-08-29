@@ -2,29 +2,29 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden flex items-center justify-center">
+    <section className="relative min-h-4/6/5 overflow-hidden flex items-center justify-center">
       {/* Background Glow */}
    
 
       <div className="herobox mx-auto flex min-h-screen max-w-7xl flex-col-reverse items-center justify-center gap-16 px-6 py-16 sm:m-10 lg:flex-row lg:px-10">
         {/* Left */}
         <div className="z-10 w-full max-w-xl text-center lg:text-left">
-          <span className="inline-block rounded-full border border-blue-400/30 bg-blue-900/10 px-4 py-2 text-sm font-medium tracking-[0.2em] text-black">
+          <span className="inline-block rounded-full border border-blue-400/30 bg-blue-900/10 dark:bg-blue-500/20 px-4 py-2 text-sm font-medium tracking-[0.2em] text-black dark:text-white">
             DIGITAL POKÉDEX
           </span>
 
-          <h1 className="mt-8 text-5xl font-black leading-tight text-gray-800 sm:text-6xl lg:text-7xl">
+          <h1 className="mt-8 text-5xl font-black leading-tight text-gray-800 dark:text-gray-100 sm:text-6xl lg:text-7xl">
             Discover
             <br />
-            <span className="text-gray-600 ">
+            <span className="text-gray-600 dark:text-gray-400 ">
               Every Pokémon <br />
                 Instantly.
             </span>
             
-          
+           
           </h1>
 
-          <p className="mt-8 text-base leading-8 text-gray-800 sm:text-lg">
+          <p className="mt-8 text-base leading-8 text-gray-800 dark:text-gray-200 sm:text-lg">
             Explore Pokémon from every generation with detailed stats,
             abilities, evolutions, and types in one beautiful Pokédex.
           </p>
@@ -45,7 +45,7 @@ const Hero = () => {
           
 
           <img
-            src="/public/3.svg"
+            src="https://ik.imagekit.io/9alp3jq6v/3.svg"
             alt="Pokemon"
             className="relative z-10 w-[240px] transition duration-500 hover:scale-105 sm:w-[340px] lg:w-[460px]"
           />
@@ -56,7 +56,7 @@ const Hero = () => {
 
       {/* Scroll */}
       <div className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 md:block">
-        <div className="animate-bounce text-3xl text-gray-500">↓</div>
+        <div className="animate-bounce text-3xl text-gray-500 dark:text-gray-400">↓</div>
       </div>
     </section>
   );
