@@ -3,7 +3,7 @@ import  typeStyles  from "../../data/Pokestyle.js"; // or adjust based on your e
 
 const Card = ({ pokemonData }) => {
   return (
-    <div className="w-full  max-w-[360px] h-[500px] rounded-2xl shadow-lg flex flex-col items-center p-4 text-center mx-auto bg-white transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
+    <div className="w-full  max-w-[360px] h-[500px] rounded-2xl shadow-lg flex flex-col items-center p-4 text-center mx-auto bg-white dark:bg-slate-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
 
       {/* Top */}
       <div className="w-full h-[75%] flex items-center justify-center">
@@ -16,7 +16,7 @@ const Card = ({ pokemonData }) => {
 
       {/* Bottom */}
       <div className="w-full flex flex-col gap-4 py-4">
-        <h2 className="text-3xl font-bold capitalize">
+        <h2 className="text-3xl font-bold capitalize text-slate-900 dark:text-white">
           {pokemonData.name}
         </h2>
 
