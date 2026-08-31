@@ -8,7 +8,7 @@ import Hero from './Components/HeroSection/Hero';
 import Pagination from './Components/Pagination/Pagination';
 import Footer from './Components/footer/Footer';
 import useTheme from './hooks/useTheme';
-import "dotenv"
+
 
 const PER_PAGE = 20;
 
@@ -19,7 +19,9 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const cardsRef = useRef(null);
 
-  const API = import.meta.env.VITE_POKI_URI;
+  // const API = import.meta.env.VITE_POKI_URI;
+  
+  const API = "https://pokeapi.co/api/v2/pokemon?limit=20";
 
   const fetchPokemon = async () => {
     try {
