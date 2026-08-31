@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 *{
     margin: 0;
     padding: 0;
@@ -10,10 +12,26 @@ html , body{
     width: 100%;
 }
 
+html{
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark{
+    background-color: #0f172a;
+}
+
+
+  html.dark body {                                                                                                                 
+         background-color: #0206179d;                                                                                                      
+         color: #f3f4f6;                                                                                                             
+     }          
 
 body{
+    background-color: white;
+    color: #1f2937;
+    transition: background-color 0.3s ease, color 0.3s ease;
     text-align: center;
-
 }
 
 span{
@@ -32,10 +50,24 @@ button{
     margin-left: 12px;
 }
 
-input{
+/* input{
     padding: 4px 6px;
+} */
+
+::placeholder{
+    margin-left: 20px;
 }
 
+p{
+    padding: 10px 0px;
+}
+h2{
+    margin: 8px 0px;
+}
+
+.icons{
+    margin-bottom: 15px;
+}
 .remix-icon{
     margin-left: 6px;
 }
